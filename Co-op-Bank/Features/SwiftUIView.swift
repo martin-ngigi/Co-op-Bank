@@ -21,7 +21,7 @@ struct SwiftUIView: View {
             Color.theme.darkGreenColor.opacity(0.9)
                 .edgesIgnoringSafeArea(.all)
             
-            // Your content view
+            // content view
             VStack {
                 Text("Hello, World!")
                     .font(.title)

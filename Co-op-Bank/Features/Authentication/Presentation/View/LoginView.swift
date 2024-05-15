@@ -83,7 +83,7 @@ struct LoginView: View {
                         .foregroundColor(.white)
                     if viewModel.isPasswordVisible {
                         ZStack(alignment: .leading) {
-                            if  viewModel.username.isEmpty {
+                            if  viewModel.password.isEmpty {
                                 Text("Password")
                                     .foregroundColor(.white)
                                 }
