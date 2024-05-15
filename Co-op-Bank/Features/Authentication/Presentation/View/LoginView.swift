@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var username: String = ""
-    @State private var password: String = ""
-    @State private var isPasswordVisible: Bool = false
+    @EnvironmentObject var viewModel : AuthenticationViewmodel // already initialized in App
+
+
 
     var body: some View {
         VStack {
@@ -32,7 +32,7 @@ struct LoginView: View {
             HStack {
                 Image(systemName: "person")
                     .foregroundColor(.white)
-                TextField("Username", text: $username)
+                TextField("Username", text: $viewModel.username)
                     .autocapitalization(.none)
                     .foregroundColor(.white)
                     .padding()
@@ -50,19 +50,19 @@ struct LoginView: View {
             HStack {
                 Image(systemName: "lock")
                     .foregroundColor(.white)
-                if isPasswordVisible {
-                    TextField("Password", text: $password)
+                if viewModel.isPasswordVisible {
+                    TextField("Password", text: $viewModel.password)
                         .foregroundColor(.white)
                         .padding()
                 } else {
-                    SecureField("Password", text: $password)
+                    SecureField("Password", text: $viewModel.password)
                         .foregroundColor(.white)
                         .padding()
                 }
                 Button(action: {
-                    isPasswordVisible.toggle()
+                    viewModel.isPasswordVisible.toggle()
                 }) {
-                    Image(systemName: isPasswordVisible ? "eye.slash" : "eye")
+                    Image(systemName: viewModel.isPasswordVisible ? "eye.slash" : "eye")
                         .foregroundColor(.white)
                 }
             }
@@ -75,19 +75,33 @@ struct LoginView: View {
             .padding(.horizontal)
             .padding(.top, 15)
             
-            // Login Button
-            Button(action: {
-                // Handle login action
-            }) {
-                Text("Login")
-                    .foregroundColor(.white)
-                    .frame(maxWidth: .infinity)
+            //Results
+            if case let .error(error) = viewModel.state{
+                Text(error)
+                    .foregroundStyle(.red)
                     .padding()
-                    .background(Color.green.opacity(1.0))
-                    .cornerRadius(8)
-                    .padding(.horizontal)
             }
-            .padding(.top, 30)
+            
+            if viewModel.state == .isLoading {
+                ProgressView()
+                    .progressViewStyle(.circular)
+            }
+            else {
+                // Login Button
+                Button(action: {
+                    // Handle login action
+                    Task { await viewModel.authenticateUser() }
+                }) {
+                    Text("Login")
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.green.opacity(1.0))
+                        .cornerRadius(8)
+                        .padding(.horizontal)
+                }
+                .padding(.top, 30)
+            }
             
             Spacer()
         }

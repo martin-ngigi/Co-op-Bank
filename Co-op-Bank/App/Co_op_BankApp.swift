@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct Co_op_BankApp: App {
+    @StateObject var authenticationViewmodel = AuthenticationViewmodel()
+
     var body: some Scene {
         WindowGroup {
             LoginView()
+                .environmentObject(authenticationViewmodel)
+
         }
     }
 }
