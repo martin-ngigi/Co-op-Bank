@@ -74,61 +74,72 @@ struct LoginView: View {
                         RoundedRectangle(cornerRadius: 6)
                             .stroke(Color.white, lineWidth: 1)
                     )
+                    
+                    if !viewModel.usernameError.isEmpty {
+                        Text(viewModel.usernameError)
+                            .foregroundStyle(.red)
+                    }
+                    
+                    //  Password Field
+                    HStack {
+                        Image(systemName: "lock")
+                            .foregroundColor(.white)
+                        if viewModel.isPasswordVisible {
+                            ZStack(alignment: .leading) {
+                                if  viewModel.password.isEmpty {
+                                    Text("Password")
+                                        .foregroundColor(.white)
+                                    }
+                                    TextField("", text:  $viewModel.password)
+                                        .autocapitalization(.none)
+                                        .foregroundColor(.white)
+                                        .padding(.vertical, 9)
+                            }
+                            /*
+                            TextField("Password", text: $viewModel.password)
+                                .foregroundColor(.white)
+                                .padding()
+                            */
+                        }
+                        else {
+                            ZStack(alignment: .leading) {
+                                if  viewModel.password.isEmpty {
+                                    Text("Password")
+                                        .foregroundColor(.white)
+                                    }
+                                    SecureField("", text:  $viewModel.password)
+                                        .autocapitalization(.none)
+                                        .foregroundColor(.white)
+                                        .padding(.vertical, 9)
+                            }
+                            /*
+                            SecureField("Password", text: $viewModel.password)
+                                .foregroundColor(.white)
+                                .padding()
+                            */
+                        }
+                        Button(action: {
+                            viewModel.isPasswordVisible.toggle()
+                        }) {
+                            Image(systemName: viewModel.isPasswordVisible ? "eye.slash" : "eye")
+                                .foregroundColor(.white)
+                        }
+                    }
+                    .padding(.horizontal, 10)
+                    .background(Color.clear)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 6)
+                            .stroke(Color.white, lineWidth: 1)
+                    )
+                    .padding(.top, 15)
+                    
+                    
+                    if !viewModel.passwordError.isEmpty {
+                        Text(viewModel.passwordError)
+                            .foregroundStyle(.red)
+                    }
                 }
                 .padding(.top, 30)
-                
-                //  Password Field
-                HStack {
-                    Image(systemName: "lock")
-                        .foregroundColor(.white)
-                    if viewModel.isPasswordVisible {
-                        ZStack(alignment: .leading) {
-                            if  viewModel.password.isEmpty {
-                                Text("Password")
-                                    .foregroundColor(.white)
-                                }
-                                TextField("", text:  $viewModel.password)
-                                    .autocapitalization(.none)
-                                    .foregroundColor(.white)
-                                    .padding(.vertical, 9)
-                        }
-                        /*
-                        TextField("Password", text: $viewModel.password)
-                            .foregroundColor(.white)
-                            .padding()
-                        */
-                    }
-                    else {
-                        ZStack(alignment: .leading) {
-                            if  viewModel.password.isEmpty {
-                                Text("Password")
-                                    .foregroundColor(.white)
-                                }
-                                SecureField("", text:  $viewModel.password)
-                                    .autocapitalization(.none)
-                                    .foregroundColor(.white)
-                                    .padding(.vertical, 7)
-                        }
-                        /*
-                        SecureField("Password", text: $viewModel.password)
-                            .foregroundColor(.white)
-                            .padding()
-                        */
-                    }
-                    Button(action: {
-                        viewModel.isPasswordVisible.toggle()
-                    }) {
-                        Image(systemName: viewModel.isPasswordVisible ? "eye.slash" : "eye")
-                            .foregroundColor(.white)
-                    }
-                }
-                .padding(.horizontal, 10)
-                .background(Color.clear)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 6)
-                        .stroke(Color.white, lineWidth: 1)
-                )
-                .padding(.top, 15)
                 
                 //Results
                 if case let .error(error) = viewModel.state{
@@ -155,6 +166,13 @@ struct LoginView: View {
                     
             }
             .frame(width: UIScreen.main.bounds.width - 50)
+        }
+        .onChange(of: viewModel.username) {
+            viewModel.usernameError = viewModel.valdateUsername()
+
+        }
+        .onChange(of: viewModel.password) {
+            viewModel.passwordError = viewModel.valdatePassword()
         }
         .onDisappear{
             viewModel.username = ""

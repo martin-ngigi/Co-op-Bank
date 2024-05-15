@@ -21,8 +21,34 @@ class AuthenticationViewmodel: ObservableObject {
     @Published var user: UserResponseEntity?
     @Published var toast: Toast? = nil
     
+    @Published var usernameError: String = "" {
+        didSet {
+            objectWillChange.send()
+        }
+    }
+    
+    @Published var passwordError: String = "" {
+        didSet {
+            objectWillChange.send()
+        }
+    }
+    
     @MainActor
     func authenticateUser() async {
+        if username.isEmpty && password.isEmpty {
+            usernameError = "Username can't be empty"
+            passwordError = "Passowrd can't be empty"
+            return
+        }
+        if username.isEmpty {
+            usernameError = "Username can't be empty"
+            return
+        }
+        if password.isEmpty {
+            passwordError = "Passowrd can't be empty"
+            return
+        }
+        
         state = FetchState.isLoading
         
         let user: UserRequestEntity = UserRequestEntity(username: username, password: password)
@@ -44,5 +70,17 @@ class AuthenticationViewmodel: ObservableObject {
             state = .error(error.description)
         }
         
+    }
+    
+    
+    
+    func valdateUsername() -> String{
+        usernameError = username.isEmpty ? "Username can't be empty" : ""
+        return usernameError
+    }
+    
+    func valdatePassword() -> String{
+        passwordError = password.isEmpty ?  "Password can't be empty" : ""
+        return passwordError
     }
 }
