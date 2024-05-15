@@ -3,4 +3,7 @@
     <entity name="MesageModel" representedClassName="MesageModel" syncable="YES" codeGenerationType="class">
         <attribute name="welcome_message" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="WelcomeMessageModel" representedClassName="WelcomeMessageModel" syncable="YES" codeGenerationType="class">
+        <attribute name="message" optional="YES" attributeType="String"/>
+    </entity>
 </model>

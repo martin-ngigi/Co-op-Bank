@@ -13,12 +13,9 @@ class MessageLocalDataSource {
     private let viewContext = CoreDataProvider.shared.persistentContainer.viewContext
 
     func saveMessage(message: String) {
-        /*
-        let messageModel = MesaageModel(context: viewContext)
+        let messageModel = MesageModel(context: viewContext)
         messageModel.welcome_message = message
         save()
-        */
-
     }
     
     private func save() {

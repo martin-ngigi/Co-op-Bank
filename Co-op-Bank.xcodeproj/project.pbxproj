@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A35D6B2F2BF4DD0000817DA3 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35D6B2E2BF4DD0000817DA3 /* ColorTheme.swift */; };
+		A35D6B312BF4DF0E00817DA3 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35D6B302BF4DF0E00817DA3 /* SwiftUIView.swift */; };
 		A3B5AB422BF498D900C94C64 /* Co_op_BankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB412BF498D900C94C64 /* Co_op_BankApp.swift */; };
 		A3B5AB442BF498D900C94C64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB432BF498D900C94C64 /* ContentView.swift */; };
 		A3B5AB462BF498DB00C94C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3B5AB452BF498DB00C94C64 /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A35D6B2E2BF4DD0000817DA3 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		A35D6B302BF4DF0E00817DA3 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		A3B5AB3E2BF498D900C94C64 /* Co-op-Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Co-op-Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B5AB412BF498D900C94C64 /* Co_op_BankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Co_op_BankApp.swift; sourceTree = "<group>"; };
 		A3B5AB432BF498D900C94C64 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 			children = (
 				A3B5AB582BF4A56800C94C64 /* Authentication */,
 				A3B5AB742BF4A8CB00C94C64 /* Home */,
+				A35D6B302BF4DF0E00817DA3 /* SwiftUIView.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				A3B5AB6B2BF4A6E300C94C64 /* View.swift */,
+				A35D6B2E2BF4DD0000817DA3 /* ColorTheme.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -506,6 +512,7 @@
 			files = (
 				A3B5AB5E2BF4A5EA00C94C64 /* PrimaryButtonModifier.swift in Sources */,
 				A3B5AB6F2BF4A73200C94C64 /* Constants.swift in Sources */,
+				A35D6B312BF4DF0E00817DA3 /* SwiftUIView.swift in Sources */,
 				A3B5AB502BF49B4200C94C64 /* LoginView.swift in Sources */,
 				A3B5AB972BF4B0AD00C94C64 /* AuthUsecases.swift in Sources */,
 				A3B5ABBA2BF4BDDD00C94C64 /* Homeusecases.swift in Sources */,
@@ -533,6 +540,7 @@
 				A3B5AB842BF4A9F100C94C64 /* AuthRemoteDataSource.swift in Sources */,
 				A3B5AB8C2BF4ACB900C94C64 /* UserResponseModel.swift in Sources */,
 				A3B5AB942BF4AEF900C94C64 /* AuthRepository.swift in Sources */,
+				A35D6B2F2BF4DD0000817DA3 /* ColorTheme.swift in Sources */,
 				A3B5AB652BF4A64E00C94C64 /* ToastStyle.swift in Sources */,
 				A3B5AB732BF4A75A00C94C64 /* APIError.swift in Sources */,
 			);
