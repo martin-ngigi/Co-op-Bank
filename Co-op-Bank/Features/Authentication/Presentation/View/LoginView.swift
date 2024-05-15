@@ -100,7 +100,7 @@ struct LoginView: View {
                     }
                     else {
                         ZStack(alignment: .leading) {
-                            if  viewModel.username.isEmpty {
+                            if  viewModel.password.isEmpty {
                                 Text("Password")
                                     .foregroundColor(.white)
                                 }

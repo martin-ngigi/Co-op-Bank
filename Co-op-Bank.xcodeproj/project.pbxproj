@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		A35D6B2F2BF4DD0000817DA3 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35D6B2E2BF4DD0000817DA3 /* ColorTheme.swift */; };
 		A35D6B312BF4DF0E00817DA3 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35D6B302BF4DF0E00817DA3 /* SwiftUIView.swift */; };
+		A35D6B332BF4FA9600817DA3 /* Readme.MD in Resources */ = {isa = PBXBuildFile; fileRef = A35D6B322BF4FA9600817DA3 /* Readme.MD */; };
+		A35D6B362BF4FC1D00817DA3 /* Login.png in Resources */ = {isa = PBXBuildFile; fileRef = A35D6B352BF4FC1D00817DA3 /* Login.png */; };
+		A35D6B382BF4FC2B00817DA3 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = A35D6B372BF4FC2B00817DA3 /* Home.png */; };
 		A3B5AB422BF498D900C94C64 /* Co_op_BankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB412BF498D900C94C64 /* Co_op_BankApp.swift */; };
 		A3B5AB442BF498D900C94C64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB432BF498D900C94C64 /* ContentView.swift */; };
 		A3B5AB462BF498DB00C94C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3B5AB452BF498DB00C94C64 /* Assets.xcassets */; };
@@ -47,6 +50,9 @@
 /* Begin PBXFileReference section */
 		A35D6B2E2BF4DD0000817DA3 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
 		A35D6B302BF4DF0E00817DA3 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		A35D6B322BF4FA9600817DA3 /* Readme.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.MD; sourceTree = "<group>"; };
+		A35D6B352BF4FC1D00817DA3 /* Login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login.png; sourceTree = "<group>"; };
+		A35D6B372BF4FC2B00817DA3 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
 		A3B5AB3E2BF498D900C94C64 /* Co-op-Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Co-op-Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B5AB412BF498D900C94C64 /* Co_op_BankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Co_op_BankApp.swift; sourceTree = "<group>"; };
 		A3B5AB432BF498D900C94C64 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,9 +100,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A35D6B342BF4FBE400817DA3 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				A35D6B372BF4FC2B00817DA3 /* Home.png */,
+				A35D6B352BF4FC1D00817DA3 /* Login.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		A3B5AB352BF498D900C94C64 = {
 			isa = PBXGroup;
 			children = (
+				A35D6B342BF4FBE400817DA3 /* Screenshots */,
+				A35D6B322BF4FA9600817DA3 /* Readme.MD */,
 				A3B5AB402BF498D900C94C64 /* Co-op-Bank */,
 				A3B5AB3F2BF498D900C94C64 /* Products */,
 			);
@@ -499,7 +516,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3B5AB492BF498DB00C94C64 /* Preview Assets.xcassets in Resources */,
+				A35D6B362BF4FC1D00817DA3 /* Login.png in Resources */,
+				A35D6B382BF4FC2B00817DA3 /* Home.png in Resources */,
 				A3B5AB462BF498DB00C94C64 /* Assets.xcassets in Resources */,
+				A35D6B332BF4FA9600817DA3 /* Readme.MD in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
