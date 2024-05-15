@@ -9,7 +9,8 @@ import Foundation
 import SwiftUI
 
 struct ColorTheme {
-    let darkGreenColor = Color("DarkGreenColor") // #FF7000
+    let darkGreenColor = Color("DarkGreenColor")
+    let greenYellow = Color("GreenYellow")
 
 }
 

@@ -14,7 +14,7 @@ struct PrimaryButtonModifier: ViewModifier {
         content
             .foregroundStyle(.white)
             .frame(width: UIScreen.main.bounds.width - 80, height: 44)
-            .background(Color.green.opacity(0.5))
+            .foregroundColor(Color.theme.greenYellow)
             .cornerRadius(10)
             .padding(.top, 24)
     }
