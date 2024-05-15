@@ -1,41 +1,21 @@
-name: Co-op-Bank Digital Banking Workflow
+name: Co-op-Bank Digital Banking Workflow 
 
 on:
   push:
-    branches:
-      - main
-      - 'feature/**'
+    branches: [ main ]
   pull_request:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
-  test:
+
+  build:
     runs-on: macos-latest
-
+    
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Set up Ruby
-        uses: actions/setup-ruby@v1
-        with:
-          ruby-version: 'default'
-
-      - name: Set up Bundler
-        run: gem install bundler
-
-      - name: Install fastlane
-        run: bundle install
-
-      - name: Set up Xcode
-        uses: maxim-lobanov/setup-xcode@v1
-        with:
-          xcode-version: '14.2'
-
-      - name: Install dependencies
-        run: bundle exec pod install
-        working-directory: ./Co-op-Bank
-
-      - name: Run tests
-        run: xcodebuild test -workspace Co-op-Bank.xcworkspace -scheme Co-op-Bank -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.5'
+    - uses: actions/checkout@v4
+    
+    - name: Build
+      run: swift build -v
+      
+    - name: Run tests
+      run: swift test -v
