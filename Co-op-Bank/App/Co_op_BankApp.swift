@@ -13,7 +13,7 @@ struct Co_op_BankApp: App {
 
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            LoginGroupView()
                 .environmentObject(authenticationViewmodel)
 
         }

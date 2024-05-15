@@ -32,6 +32,7 @@
 		A3B5AB942BF4AEF900C94C64 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB932BF4AEF900C94C64 /* AuthRepository.swift */; };
 		A3B5AB972BF4B0AD00C94C64 /* AuthUsecases.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB962BF4B0AD00C94C64 /* AuthUsecases.swift */; };
 		A3B5AB992BF4B19F00C94C64 /* FetchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB982BF4B19F00C94C64 /* FetchState.swift */; };
+		A3B5AB9B2BF4B5FF00C94C64 /* LoginGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB9A2BF4B5FF00C94C64 /* LoginGroupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		A3B5AB932BF4AEF900C94C64 /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
 		A3B5AB962BF4B0AD00C94C64 /* AuthUsecases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUsecases.swift; sourceTree = "<group>"; };
 		A3B5AB982BF4B19F00C94C64 /* FetchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchState.swift; sourceTree = "<group>"; };
+		A3B5AB9A2BF4B5FF00C94C64 /* LoginGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginGroupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +119,7 @@
 				A3B5AB6D2BF4A72200C94C64 /* Utils */,
 				A3B5AB692BF4A6D100C94C64 /* Extensions */,
 				A3B5AB662BF4A67F00C94C64 /* Components */,
-				A3B5AB612BF4A62B00C94C64 /* Models */,
+				A3B5AB612BF4A62B00C94C64 /* Base+Models */,
 				A3B5AB5C2BF4A5C500C94C64 /* Modifiers */,
 			);
 			path = Core;
@@ -188,7 +190,7 @@
 			path = Modifiers;
 			sourceTree = "<group>";
 		};
-		A3B5AB612BF4A62B00C94C64 /* Models */ = {
+		A3B5AB612BF4A62B00C94C64 /* Base+Models */ = {
 			isa = PBXGroup;
 			children = (
 				A3B5AB622BF4A63900C94C64 /* Toast.swift */,
@@ -196,7 +198,7 @@
 				A3B5AB722BF4A75A00C94C64 /* APIError.swift */,
 				A3B5AB982BF4B19F00C94C64 /* FetchState.swift */,
 			);
-			path = Models;
+			path = "Base+Models";
 			sourceTree = "<group>";
 		};
 		A3B5AB662BF4A67F00C94C64 /* Components */ = {
@@ -284,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				A3B5AB4F2BF49B4200C94C64 /* LoginView.swift */,
+				A3B5AB9A2BF4B5FF00C94C64 /* LoginGroupView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 				A3B5AB422BF498D900C94C64 /* Co_op_BankApp.swift in Sources */,
 				A3B5AB632BF4A63900C94C64 /* Toast.swift in Sources */,
 				A3B5AB872BF4AB6D00C94C64 /* UserRequestModel.swift in Sources */,
+				A3B5AB9B2BF4B5FF00C94C64 /* LoginGroupView.swift in Sources */,
 				A3B5AB802BF4A97900C94C64 /* AuthenticationViewmodel.swift in Sources */,
 				A3B5AB682BF4A68B00C94C64 /* ToastView.swift in Sources */,
 				A3B5AB842BF4A9F100C94C64 /* AuthRemoteDataSource.swift in Sources */,

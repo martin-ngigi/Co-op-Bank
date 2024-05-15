@@ -10,7 +10,8 @@ import SwiftUI
 
 struct HomeView: View {
     var userName: String = "JohnDoe" // Replace with dynamic username
-    
+    @EnvironmentObject var viewModel : AuthenticationViewmodel // already initialized in App
+
     var body: some View {
         ZStack {
             // Background color and image
@@ -59,6 +60,7 @@ struct HomeView: View {
                 Spacer()
             }
         }
+        .toastView(toast: $viewModel.toast)
     }
 }
 
