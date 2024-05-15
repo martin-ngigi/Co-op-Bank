@@ -105,6 +105,10 @@ struct LoginView: View {
             
             Spacer()
         }
+        .onDisappear{
+            viewModel.username = ""
+            viewModel.password = ""
+        }
         .background(Color.green.opacity(0.6))
         .ignoresSafeArea()
     }

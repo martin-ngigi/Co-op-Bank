@@ -33,6 +33,13 @@
 		A3B5AB972BF4B0AD00C94C64 /* AuthUsecases.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB962BF4B0AD00C94C64 /* AuthUsecases.swift */; };
 		A3B5AB992BF4B19F00C94C64 /* FetchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB982BF4B19F00C94C64 /* FetchState.swift */; };
 		A3B5AB9B2BF4B5FF00C94C64 /* LoginGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB9A2BF4B5FF00C94C64 /* LoginGroupView.swift */; };
+		A3B5AB9E2BF4B8D400C94C64 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB9C2BF4B8D400C94C64 /* CoreDataModel.xcdatamodeld */; };
+		A3B5ABAB2BF4BB4900C94C64 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5ABAA2BF4BB4900C94C64 /* CoreDataProvider.swift */; };
+		A3B5ABAF2BF4BC9400C94C64 /* MessageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5ABAE2BF4BC9400C94C64 /* MessageRepository.swift */; };
+		A3B5ABB32BF4BCC500C94C64 /* SaveMessageRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5ABB22BF4BCC500C94C64 /* SaveMessageRepositoryProtocol.swift */; };
+		A3B5ABB72BF4BD5200C94C64 /* MessageLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5ABB62BF4BD5200C94C64 /* MessageLocalDataSource.swift */; };
+		A3B5ABBA2BF4BDDD00C94C64 /* Homeusecases.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5ABB92BF4BDDD00C94C64 /* Homeusecases.swift */; };
+		A3B5ABBC2BF4BEA100C94C64 /* HomeViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5ABBB2BF4BEA100C94C64 /* HomeViewmodel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +70,13 @@
 		A3B5AB962BF4B0AD00C94C64 /* AuthUsecases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUsecases.swift; sourceTree = "<group>"; };
 		A3B5AB982BF4B19F00C94C64 /* FetchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchState.swift; sourceTree = "<group>"; };
 		A3B5AB9A2BF4B5FF00C94C64 /* LoginGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginGroupView.swift; sourceTree = "<group>"; };
+		A3B5AB9D2BF4B8D400C94C64 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		A3B5ABAA2BF4BB4900C94C64 /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
+		A3B5ABAE2BF4BC9400C94C64 /* MessageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRepository.swift; sourceTree = "<group>"; };
+		A3B5ABB22BF4BCC500C94C64 /* SaveMessageRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveMessageRepositoryProtocol.swift; sourceTree = "<group>"; };
+		A3B5ABB62BF4BD5200C94C64 /* MessageLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageLocalDataSource.swift; sourceTree = "<group>"; };
+		A3B5ABB92BF4BDDD00C94C64 /* Homeusecases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homeusecases.swift; sourceTree = "<group>"; };
+		A3B5ABBB2BF4BEA100C94C64 /* HomeViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewmodel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +130,7 @@
 		A3B5AB552BF4A53400C94C64 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A3B5ABA72BF4BB2B00C94C64 /* Providers */,
 				A3B5AB6D2BF4A72200C94C64 /* Utils */,
 				A3B5AB692BF4A6D100C94C64 /* Extensions */,
 				A3B5AB662BF4A67F00C94C64 /* Components */,
@@ -197,6 +212,7 @@
 				A3B5AB642BF4A64E00C94C64 /* ToastStyle.swift */,
 				A3B5AB722BF4A75A00C94C64 /* APIError.swift */,
 				A3B5AB982BF4B19F00C94C64 /* FetchState.swift */,
+				A3B5AB9C2BF4B8D400C94C64 /* CoreDataModel.xcdatamodeld */,
 			);
 			path = "Base+Models";
 			sourceTree = "<group>";
@@ -248,6 +264,9 @@
 		A3B5AB762BF4A8D600C94C64 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				A3B5ABA02BF4B9D800C94C64 /* DataSource */,
+				A3B5ABA32BF4BA0500C94C64 /* Repositories */,
+				A3B5ABA12BF4B9E300C94C64 /* Models */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -255,6 +274,9 @@
 		A3B5AB772BF4A8DB00C94C64 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				A3B5ABB82BF4BDC900C94C64 /* Usecases */,
+				A3B5ABA22BF4B9FB00C94C64 /* Repositories */,
+				A3B5AB9F2BF4B9D200C94C64 /* Entities */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -262,6 +284,7 @@
 		A3B5AB782BF4A90D00C94C64 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A3B5ABBB2BF4BEA100C94C64 /* HomeViewmodel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -349,6 +372,68 @@
 			path = Usecases;
 			sourceTree = "<group>";
 		};
+		A3B5AB9F2BF4B9D200C94C64 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		A3B5ABA02BF4B9D800C94C64 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				A3B5ABA42BF4BAA300C94C64 /* Local */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		A3B5ABA12BF4B9E300C94C64 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A3B5ABA22BF4B9FB00C94C64 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A3B5ABB22BF4BCC500C94C64 /* SaveMessageRepositoryProtocol.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A3B5ABA32BF4BA0500C94C64 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A3B5ABAE2BF4BC9400C94C64 /* MessageRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A3B5ABA42BF4BAA300C94C64 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				A3B5ABB62BF4BD5200C94C64 /* MessageLocalDataSource.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		A3B5ABA72BF4BB2B00C94C64 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				A3B5ABAA2BF4BB4900C94C64 /* CoreDataProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		A3B5ABB82BF4BDC900C94C64 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				A3B5ABB92BF4BDDD00C94C64 /* Homeusecases.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -423,15 +508,22 @@
 				A3B5AB6F2BF4A73200C94C64 /* Constants.swift in Sources */,
 				A3B5AB502BF49B4200C94C64 /* LoginView.swift in Sources */,
 				A3B5AB972BF4B0AD00C94C64 /* AuthUsecases.swift in Sources */,
+				A3B5ABBA2BF4BDDD00C94C64 /* Homeusecases.swift in Sources */,
+				A3B5ABAF2BF4BC9400C94C64 /* MessageRepository.swift in Sources */,
+				A3B5AB9E2BF4B8D400C94C64 /* CoreDataModel.xcdatamodeld in Sources */,
 				A3B5AB912BF4AEA800C94C64 /* AuthenticateUserRepositoryProtocol.swift in Sources */,
 				A3B5AB6C2BF4A6E300C94C64 /* View.swift in Sources */,
+				A3B5ABB72BF4BD5200C94C64 /* MessageLocalDataSource.swift in Sources */,
+				A3B5ABB32BF4BCC500C94C64 /* SaveMessageRepositoryProtocol.swift in Sources */,
 				A3B5AB712BF4A74600C94C64 /* NetworkUtils.swift in Sources */,
 				A3B5AB542BF4A06A00C94C64 /* HomeView.swift in Sources */,
 				A3B5AB442BF498D900C94C64 /* ContentView.swift in Sources */,
 				A3B5AB602BF4A5FC00C94C64 /* ToastModifier.swift in Sources */,
 				A3B5AB992BF4B19F00C94C64 /* FetchState.swift in Sources */,
 				A3B5AB8E2BF4ACFC00C94C64 /* UserResponseEntity.swift in Sources */,
+				A3B5ABBC2BF4BEA100C94C64 /* HomeViewmodel.swift in Sources */,
 				A3B5AB8A2BF4ABB300C94C64 /* UserRequestEntity.swift in Sources */,
+				A3B5ABAB2BF4BB4900C94C64 /* CoreDataProvider.swift in Sources */,
 				A3B5AB422BF498D900C94C64 /* Co_op_BankApp.swift in Sources */,
 				A3B5AB632BF4A63900C94C64 /* Toast.swift in Sources */,
 				A3B5AB872BF4AB6D00C94C64 /* UserRequestModel.swift in Sources */,
@@ -648,6 +740,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A3B5AB9C2BF4B8D400C94C64 /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A3B5AB9D2BF4B8D400C94C64 /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = A3B5AB9D2BF4B8D400C94C64 /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A3B5AB362BF498D900C94C64 /* Project object */;
 }

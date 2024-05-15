@@ -9,8 +9,8 @@ import SwiftUI
 
 
 struct HomeView: View {
-    var userName: String = "JohnDoe" // Replace with dynamic username
-    @EnvironmentObject var viewModel : AuthenticationViewmodel // already initialized in App
+    @EnvironmentObject var authenticationViewmodel : AuthenticationViewmodel // already initialized in App
+    @EnvironmentObject var viewModel : HomeViewmodel // already initialized in App
 
     var body: some View {
         ZStack {
@@ -31,6 +31,7 @@ struct HomeView: View {
                     
                     Button(action: {
                         // Logout action
+                        authenticationViewmodel.isAuthenticated = false
                     }) {
                         HStack {
                             Text("Logout")
@@ -51,7 +52,7 @@ struct HomeView: View {
                 Spacer()
                 
                 // Welcome message
-                Text("Welcome \(userName) to the new Co-op Bank app!")
+                Text("Welcome \(authenticationViewmodel.user?.firstName ?? "") to the new Co-op Bank app!")
                     .foregroundColor(.white)
                     .font(.title)
                     .fontWeight(.medium)
@@ -60,10 +61,13 @@ struct HomeView: View {
                 Spacer()
             }
         }
-        .toastView(toast: $viewModel.toast)
+        .onAppear{
+            viewModel.message = authenticationViewmodel.toast?.message ?? ""
+        }
+        .toastView(toast: $authenticationViewmodel.toast)
     }
 }
 
-#Preview {
-    HomeView()
-}
+//#Preview {
+//    HomeView()
+//}
