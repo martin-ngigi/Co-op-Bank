@@ -11,7 +11,7 @@ import SwiftUI
 struct Co_op_BankApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }
