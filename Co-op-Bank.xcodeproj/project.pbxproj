@@ -12,6 +12,9 @@
 		A35D6B332BF4FA9600817DA3 /* Readme.MD in Resources */ = {isa = PBXBuildFile; fileRef = A35D6B322BF4FA9600817DA3 /* Readme.MD */; };
 		A35D6B362BF4FC1D00817DA3 /* Login.png in Resources */ = {isa = PBXBuildFile; fileRef = A35D6B352BF4FC1D00817DA3 /* Login.png */; };
 		A35D6B382BF4FC2B00817DA3 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = A35D6B372BF4FC2B00817DA3 /* Home.png */; };
+		A35D6B402BF5472F00817DA3 /* Co_op_BankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35D6B3F2BF5472F00817DA3 /* Co_op_BankTests.swift */; };
+		A35D6B472BF5479A00817DA3 /* AuthenticationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35D6B462BF5479A00817DA3 /* AuthenticationTest.swift */; };
+		A35D6B4D2BF548C600817DA3 /* AuthenticationViewmodelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35D6B4C2BF548C600817DA3 /* AuthenticationViewmodelTests.swift */; };
 		A3B5AB422BF498D900C94C64 /* Co_op_BankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB412BF498D900C94C64 /* Co_op_BankApp.swift */; };
 		A3B5AB442BF498D900C94C64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB432BF498D900C94C64 /* ContentView.swift */; };
 		A3B5AB462BF498DB00C94C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3B5AB452BF498DB00C94C64 /* Assets.xcassets */; };
@@ -47,12 +50,26 @@
 		A3B5ABBC2BF4BEA100C94C64 /* HomeViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5ABBB2BF4BEA100C94C64 /* HomeViewmodel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A35D6B412BF5472F00817DA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3B5AB362BF498D900C94C64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3B5AB3D2BF498D900C94C64;
+			remoteInfo = "Co-op-Bank";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		A35D6B2E2BF4DD0000817DA3 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
 		A35D6B302BF4DF0E00817DA3 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		A35D6B322BF4FA9600817DA3 /* Readme.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.MD; sourceTree = "<group>"; };
 		A35D6B352BF4FC1D00817DA3 /* Login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login.png; sourceTree = "<group>"; };
 		A35D6B372BF4FC2B00817DA3 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
+		A35D6B3D2BF5472F00817DA3 /* Co-op-BankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Co-op-BankTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A35D6B3F2BF5472F00817DA3 /* Co_op_BankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Co_op_BankTests.swift; sourceTree = "<group>"; };
+		A35D6B462BF5479A00817DA3 /* AuthenticationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTest.swift; sourceTree = "<group>"; };
+		A35D6B4C2BF548C600817DA3 /* AuthenticationViewmodelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewmodelTests.swift; sourceTree = "<group>"; };
 		A3B5AB3E2BF498D900C94C64 /* Co-op-Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Co-op-Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B5AB412BF498D900C94C64 /* Co_op_BankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Co_op_BankApp.swift; sourceTree = "<group>"; };
 		A3B5AB432BF498D900C94C64 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +107,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A35D6B3A2BF5472F00817DA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3B5AB3B2BF498D900C94C64 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -109,12 +133,55 @@
 			path = Screenshots;
 			sourceTree = "<group>";
 		};
+		A35D6B3E2BF5472F00817DA3 /* Co-op-BankTests */ = {
+			isa = PBXGroup;
+			children = (
+				A35D6B4A2BF5484300817DA3 /* AuthenticationTests */,
+				A35D6B3F2BF5472F00817DA3 /* Co_op_BankTests.swift */,
+				A35D6B462BF5479A00817DA3 /* AuthenticationTest.swift */,
+			);
+			path = "Co-op-BankTests";
+			sourceTree = "<group>";
+		};
+		A35D6B482BF5482200817DA3 /* PresentationTests */ = {
+			isa = PBXGroup;
+			children = (
+				A35D6B4B2BF5486A00817DA3 /* ViewModelTests */,
+				A35D6B492BF5483A00817DA3 /* ViewTests */,
+			);
+			path = PresentationTests;
+			sourceTree = "<group>";
+		};
+		A35D6B492BF5483A00817DA3 /* ViewTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewTests;
+			sourceTree = "<group>";
+		};
+		A35D6B4A2BF5484300817DA3 /* AuthenticationTests */ = {
+			isa = PBXGroup;
+			children = (
+				A35D6B482BF5482200817DA3 /* PresentationTests */,
+			);
+			path = AuthenticationTests;
+			sourceTree = "<group>";
+		};
+		A35D6B4B2BF5486A00817DA3 /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				A35D6B4C2BF548C600817DA3 /* AuthenticationViewmodelTests.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
 		A3B5AB352BF498D900C94C64 = {
 			isa = PBXGroup;
 			children = (
 				A35D6B342BF4FBE400817DA3 /* Screenshots */,
 				A35D6B322BF4FA9600817DA3 /* Readme.MD */,
 				A3B5AB402BF498D900C94C64 /* Co-op-Bank */,
+				A35D6B3E2BF5472F00817DA3 /* Co-op-BankTests */,
 				A3B5AB3F2BF498D900C94C64 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -123,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				A3B5AB3E2BF498D900C94C64 /* Co-op-Bank.app */,
+				A35D6B3D2BF5472F00817DA3 /* Co-op-BankTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -460,6 +528,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A35D6B3C2BF5472F00817DA3 /* Co-op-BankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A35D6B432BF5472F00817DA3 /* Build configuration list for PBXNativeTarget "Co-op-BankTests" */;
+			buildPhases = (
+				A35D6B392BF5472F00817DA3 /* Sources */,
+				A35D6B3A2BF5472F00817DA3 /* Frameworks */,
+				A35D6B3B2BF5472F00817DA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A35D6B422BF5472F00817DA3 /* PBXTargetDependency */,
+			);
+			name = "Co-op-BankTests";
+			productName = "Co-op-BankTests";
+			productReference = A35D6B3D2BF5472F00817DA3 /* Co-op-BankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A3B5AB3D2BF498D900C94C64 /* Co-op-Bank */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3B5AB4C2BF498DB00C94C64 /* Build configuration list for PBXNativeTarget "Co-op-Bank" */;
@@ -487,6 +573,10 @@
 				LastSwiftUpdateCheck = 1510;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
+					A35D6B3C2BF5472F00817DA3 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = A3B5AB3D2BF498D900C94C64;
+					};
 					A3B5AB3D2BF498D900C94C64 = {
 						CreatedOnToolsVersion = 15.1;
 					};
@@ -506,11 +596,19 @@
 			projectRoot = "";
 			targets = (
 				A3B5AB3D2BF498D900C94C64 /* Co-op-Bank */,
+				A35D6B3C2BF5472F00817DA3 /* Co-op-BankTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A35D6B3B2BF5472F00817DA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3B5AB3C2BF498D900C94C64 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -526,6 +624,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A35D6B392BF5472F00817DA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A35D6B402BF5472F00817DA3 /* Co_op_BankTests.swift in Sources */,
+				A35D6B472BF5479A00817DA3 /* AuthenticationTest.swift in Sources */,
+				A35D6B4D2BF548C600817DA3 /* AuthenticationViewmodelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3B5AB3A2BF498D900C94C64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -568,7 +676,49 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A35D6B422BF5472F00817DA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3B5AB3D2BF498D900C94C64 /* Co-op-Bank */;
+			targetProxy = A35D6B412BF5472F00817DA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		A35D6B442BF5472F00817DA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.safiribyetes.Co-op-BankTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Co-op-Bank.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Co-op-Bank";
+			};
+			name = Debug;
+		};
+		A35D6B452BF5472F00817DA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.safiribyetes.Co-op-BankTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Co-op-Bank.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Co-op-Bank";
+			};
+			name = Release;
+		};
 		A3B5AB4A2BF498DB00C94C64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -749,6 +899,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A35D6B432BF5472F00817DA3 /* Build configuration list for PBXNativeTarget "Co-op-BankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A35D6B442BF5472F00817DA3 /* Debug */,
+				A35D6B452BF5472F00817DA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A3B5AB392BF498D900C94C64 /* Build configuration list for PBXProject "Co-op-Bank" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

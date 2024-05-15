@@ -37,7 +37,7 @@ class AuthenticationViewmodel: ObservableObject {
     func authenticateUser() async {
         if username.isEmpty && password.isEmpty {
             usernameError = "Username can't be empty"
-            passwordError = "Passowrd can't be empty"
+            passwordError = "Password can't be empty"
             return
         }
         if username.isEmpty {
@@ -45,7 +45,7 @@ class AuthenticationViewmodel: ObservableObject {
             return
         }
         if password.isEmpty {
-            passwordError = "Passowrd can't be empty"
+            passwordError = "Password can't be empty"
             return
         }
         
