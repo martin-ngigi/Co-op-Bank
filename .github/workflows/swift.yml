@@ -25,13 +25,13 @@ jobs:
       - name: Set up Bundler
         run: gem install bundler
 
-      - name: Install fastlane
-        run: bundle install
+      # - name: Install fastlane
+      #   run: bundle install
 
       - name: Set up Xcode
         uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: '14.2'
+          xcode-version: '15.1'
 
       - name: Install dependencies
         run: bundle exec pod install
