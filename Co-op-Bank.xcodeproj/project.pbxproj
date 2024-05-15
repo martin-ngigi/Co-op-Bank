@@ -13,6 +13,15 @@
 		A3B5AB492BF498DB00C94C64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3B5AB482BF498DB00C94C64 /* Preview Assets.xcassets */; };
 		A3B5AB502BF49B4200C94C64 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB4F2BF49B4200C94C64 /* LoginView.swift */; };
 		A3B5AB542BF4A06A00C94C64 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB532BF4A06A00C94C64 /* HomeView.swift */; };
+		A3B5AB5E2BF4A5EA00C94C64 /* PrimaryButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB5D2BF4A5EA00C94C64 /* PrimaryButtonModifier.swift */; };
+		A3B5AB602BF4A5FC00C94C64 /* ToastModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB5F2BF4A5FC00C94C64 /* ToastModifier.swift */; };
+		A3B5AB632BF4A63900C94C64 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB622BF4A63900C94C64 /* Toast.swift */; };
+		A3B5AB652BF4A64E00C94C64 /* ToastStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB642BF4A64E00C94C64 /* ToastStyle.swift */; };
+		A3B5AB682BF4A68B00C94C64 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB672BF4A68B00C94C64 /* ToastView.swift */; };
+		A3B5AB6C2BF4A6E300C94C64 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB6B2BF4A6E300C94C64 /* View.swift */; };
+		A3B5AB6F2BF4A73200C94C64 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB6E2BF4A73200C94C64 /* Constants.swift */; };
+		A3B5AB712BF4A74600C94C64 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB702BF4A74600C94C64 /* NetworkUtils.swift */; };
+		A3B5AB732BF4A75A00C94C64 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB722BF4A75A00C94C64 /* APIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +32,15 @@
 		A3B5AB482BF498DB00C94C64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A3B5AB4F2BF49B4200C94C64 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A3B5AB532BF4A06A00C94C64 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A3B5AB5D2BF4A5EA00C94C64 /* PrimaryButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonModifier.swift; sourceTree = "<group>"; };
+		A3B5AB5F2BF4A5FC00C94C64 /* ToastModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastModifier.swift; sourceTree = "<group>"; };
+		A3B5AB622BF4A63900C94C64 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		A3B5AB642BF4A64E00C94C64 /* ToastStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastStyle.swift; sourceTree = "<group>"; };
+		A3B5AB672BF4A68B00C94C64 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		A3B5AB6B2BF4A6E300C94C64 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		A3B5AB6E2BF4A73200C94C64 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A3B5AB702BF4A74600C94C64 /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		A3B5AB722BF4A75A00C94C64 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +73,9 @@
 		A3B5AB402BF498D900C94C64 /* Co-op-Bank */ = {
 			isa = PBXGroup;
 			children = (
-				A3B5AB412BF498D900C94C64 /* Co_op_BankApp.swift */,
+				A3B5AB572BF4A55F00C94C64 /* App */,
+				A3B5AB562BF4A53F00C94C64 /* Features */,
+				A3B5AB552BF4A53400C94C64 /* Core */,
 				A3B5AB432BF498D900C94C64 /* ContentView.swift */,
 				A3B5AB452BF498DB00C94C64 /* Assets.xcassets */,
 				A3B5AB472BF498DB00C94C64 /* Preview Content */,
@@ -71,6 +91,109 @@
 				A3B5AB482BF498DB00C94C64 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A3B5AB552BF4A53400C94C64 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A3B5AB6D2BF4A72200C94C64 /* Utils */,
+				A3B5AB692BF4A6D100C94C64 /* Extensions */,
+				A3B5AB662BF4A67F00C94C64 /* Components */,
+				A3B5AB612BF4A62B00C94C64 /* Models */,
+				A3B5AB5C2BF4A5C500C94C64 /* Modifiers */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A3B5AB562BF4A53F00C94C64 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A3B5AB582BF4A56800C94C64 /* Authentication */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A3B5AB572BF4A55F00C94C64 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A3B5AB412BF498D900C94C64 /* Co_op_BankApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A3B5AB582BF4A56800C94C64 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				A3B5AB5B2BF4A59700C94C64 /* Domain */,
+				A3B5AB5A2BF4A58300C94C64 /* Presentation */,
+				A3B5AB592BF4A57E00C94C64 /* Data */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		A3B5AB592BF4A57E00C94C64 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A3B5AB5A2BF4A58300C94C64 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A3B5AB5B2BF4A59700C94C64 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A3B5AB5C2BF4A5C500C94C64 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				A3B5AB5D2BF4A5EA00C94C64 /* PrimaryButtonModifier.swift */,
+				A3B5AB5F2BF4A5FC00C94C64 /* ToastModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		A3B5AB612BF4A62B00C94C64 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A3B5AB622BF4A63900C94C64 /* Toast.swift */,
+				A3B5AB642BF4A64E00C94C64 /* ToastStyle.swift */,
+				A3B5AB722BF4A75A00C94C64 /* APIError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A3B5AB662BF4A67F00C94C64 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A3B5AB672BF4A68B00C94C64 /* ToastView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A3B5AB692BF4A6D100C94C64 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A3B5AB6B2BF4A6E300C94C64 /* View.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A3B5AB6D2BF4A72200C94C64 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A3B5AB6E2BF4A73200C94C64 /* Constants.swift */,
+				A3B5AB702BF4A74600C94C64 /* NetworkUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +266,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3B5AB5E2BF4A5EA00C94C64 /* PrimaryButtonModifier.swift in Sources */,
+				A3B5AB6F2BF4A73200C94C64 /* Constants.swift in Sources */,
 				A3B5AB502BF49B4200C94C64 /* LoginView.swift in Sources */,
+				A3B5AB6C2BF4A6E300C94C64 /* View.swift in Sources */,
+				A3B5AB712BF4A74600C94C64 /* NetworkUtils.swift in Sources */,
 				A3B5AB542BF4A06A00C94C64 /* HomeView.swift in Sources */,
 				A3B5AB442BF498D900C94C64 /* ContentView.swift in Sources */,
+				A3B5AB602BF4A5FC00C94C64 /* ToastModifier.swift in Sources */,
 				A3B5AB422BF498D900C94C64 /* Co_op_BankApp.swift in Sources */,
+				A3B5AB632BF4A63900C94C64 /* Toast.swift in Sources */,
+				A3B5AB682BF4A68B00C94C64 /* ToastView.swift in Sources */,
+				A3B5AB652BF4A64E00C94C64 /* ToastStyle.swift in Sources */,
+				A3B5AB732BF4A75A00C94C64 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
