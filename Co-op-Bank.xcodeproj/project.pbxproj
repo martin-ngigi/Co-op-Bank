@@ -12,6 +12,7 @@
 		A3B5AB462BF498DB00C94C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3B5AB452BF498DB00C94C64 /* Assets.xcassets */; };
 		A3B5AB492BF498DB00C94C64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3B5AB482BF498DB00C94C64 /* Preview Assets.xcassets */; };
 		A3B5AB502BF49B4200C94C64 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB4F2BF49B4200C94C64 /* LoginView.swift */; };
+		A3B5AB542BF4A06A00C94C64 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB532BF4A06A00C94C64 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		A3B5AB452BF498DB00C94C64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3B5AB482BF498DB00C94C64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A3B5AB4F2BF49B4200C94C64 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A3B5AB532BF4A06A00C94C64 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				A3B5AB452BF498DB00C94C64 /* Assets.xcassets */,
 				A3B5AB472BF498DB00C94C64 /* Preview Content */,
 				A3B5AB4F2BF49B4200C94C64 /* LoginView.swift */,
+				A3B5AB532BF4A06A00C94C64 /* HomeView.swift */,
 			);
 			path = "Co-op-Bank";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3B5AB502BF49B4200C94C64 /* LoginView.swift in Sources */,
+				A3B5AB542BF4A06A00C94C64 /* HomeView.swift in Sources */,
 				A3B5AB442BF498D900C94C64 /* ContentView.swift in Sources */,
 				A3B5AB422BF498D900C94C64 /* Co_op_BankApp.swift in Sources */,
 			);
