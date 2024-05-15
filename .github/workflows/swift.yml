@@ -1,7 +1,4 @@
-# This workflow will build a Swift project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
-
-name: Co-op-Bank Digital Banking Workflow 
+name: Co-op-Bank Digital Banking Workflow
 
 on:
   push:
@@ -23,7 +20,7 @@ jobs:
       - name: Set up Ruby
         uses: actions/setup-ruby@v1
         with:
-          ruby-version: '2.7'
+          ruby-version: 'default'
 
       - name: Set up Bundler
         run: gem install bundler
@@ -42,4 +39,3 @@ jobs:
 
       - name: Run tests
         run: xcodebuild test -workspace Co-op-Bank.xcworkspace -scheme Co-op-Bank -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.5'
-
