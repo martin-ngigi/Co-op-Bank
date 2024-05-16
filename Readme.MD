@@ -1,7 +1,7 @@
 ## Screenshots
-1. Login Page Screenshots
+1. Login Page Screenshots.
 <img src="Screenshots/Login.png" width="128"/> 
-2. Home Page Screenshots
+2. Home Page Screenshots.
 <img src="Screenshots/Home.png" width="128"/>
 
 ## Development Features
