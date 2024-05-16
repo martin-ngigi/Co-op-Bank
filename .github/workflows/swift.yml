@@ -32,4 +32,4 @@ jobs:
 
 
       - name: Run tests
-        run: xcodebuild test -workspace Co-op-Bank.xcworkspace -scheme Co-op-Bank -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 15,OS=17.0'
+        run: xcodebuild test -workspace Co-op-Bank.xcodeproj -scheme Co-op-Bank -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 15,OS=17.0'
