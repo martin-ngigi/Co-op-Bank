@@ -82,6 +82,14 @@ class AuthenticationViewmodelTests: XCTestCase {
        }
     
 
+    func testAuthenticateUserWithEmptyPassword() async throws {
+           viewModel.username = "user"
+           viewModel.password = ""
+           await viewModel.authenticateUser()
+           XCTAssertEqual(viewModel.usernameError, "")
+           XCTAssertEqual(viewModel.passwordError, "Password can't be empty")
+           XCTAssertEqual(viewModel.state, FetchState.good)
+       }
 }
 
 

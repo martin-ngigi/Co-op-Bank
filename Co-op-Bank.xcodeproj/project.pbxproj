@@ -13,7 +13,6 @@
 		A35D6B362BF4FC1D00817DA3 /* Login.png in Resources */ = {isa = PBXBuildFile; fileRef = A35D6B352BF4FC1D00817DA3 /* Login.png */; };
 		A35D6B382BF4FC2B00817DA3 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = A35D6B372BF4FC2B00817DA3 /* Home.png */; };
 		A35D6B402BF5472F00817DA3 /* Co_op_BankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35D6B3F2BF5472F00817DA3 /* Co_op_BankTests.swift */; };
-		A35D6B472BF5479A00817DA3 /* AuthenticationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35D6B462BF5479A00817DA3 /* AuthenticationTest.swift */; };
 		A35D6B4D2BF548C600817DA3 /* AuthenticationViewmodelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35D6B4C2BF548C600817DA3 /* AuthenticationViewmodelTests.swift */; };
 		A3B5AB422BF498D900C94C64 /* Co_op_BankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB412BF498D900C94C64 /* Co_op_BankApp.swift */; };
 		A3B5AB442BF498D900C94C64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB432BF498D900C94C64 /* ContentView.swift */; };
@@ -68,7 +67,6 @@
 		A35D6B372BF4FC2B00817DA3 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
 		A35D6B3D2BF5472F00817DA3 /* Co-op-BankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Co-op-BankTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35D6B3F2BF5472F00817DA3 /* Co_op_BankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Co_op_BankTests.swift; sourceTree = "<group>"; };
-		A35D6B462BF5479A00817DA3 /* AuthenticationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTest.swift; sourceTree = "<group>"; };
 		A35D6B4C2BF548C600817DA3 /* AuthenticationViewmodelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewmodelTests.swift; sourceTree = "<group>"; };
 		A3B5AB3E2BF498D900C94C64 /* Co-op-Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Co-op-Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B5AB412BF498D900C94C64 /* Co_op_BankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Co_op_BankApp.swift; sourceTree = "<group>"; };
@@ -138,7 +136,6 @@
 			children = (
 				A35D6B4A2BF5484300817DA3 /* AuthenticationTests */,
 				A35D6B3F2BF5472F00817DA3 /* Co_op_BankTests.swift */,
-				A35D6B462BF5479A00817DA3 /* AuthenticationTest.swift */,
 			);
 			path = "Co-op-BankTests";
 			sourceTree = "<group>";
@@ -629,7 +626,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A35D6B402BF5472F00817DA3 /* Co_op_BankTests.swift in Sources */,
-				A35D6B472BF5479A00817DA3 /* AuthenticationTest.swift in Sources */,
 				A35D6B4D2BF548C600817DA3 /* AuthenticationViewmodelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
