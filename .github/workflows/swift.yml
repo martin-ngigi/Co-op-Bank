@@ -32,4 +32,4 @@ jobs:
 
 
       - name: Run tests
-        run: xcodebuild test -workspace Co-op-Bank.xcodeproj -scheme Co-op-Bank -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 15,OS=17.0'
+        run: xcodebuild test -project Co-op-Bank.xcodeproj -scheme Co-op-Bank clean build -sdk iphoneos -destination "platform=iOS Simulator,OS=16.1,name=iPhone 14 Pro Max" CODE_SIGNING_ALLOWED=No
