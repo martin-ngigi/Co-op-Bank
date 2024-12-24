@@ -14,6 +14,14 @@
 		A35D6B382BF4FC2B00817DA3 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = A35D6B372BF4FC2B00817DA3 /* Home.png */; };
 		A35D6B402BF5472F00817DA3 /* Co_op_BankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35D6B3F2BF5472F00817DA3 /* Co_op_BankTests.swift */; };
 		A35D6B4D2BF548C600817DA3 /* AuthenticationViewmodelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35D6B4C2BF548C600817DA3 /* AuthenticationViewmodelTests.swift */; };
+		A38AA4F42D1A9B5A009968EB /* EncryptDecryptService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38AA4F32D1A9B5A009968EB /* EncryptDecryptService.swift */; };
+		A38AA4F62D1A9BE8009968EB /* HttpUtilsNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38AA4F52D1A9BE8009968EB /* HttpUtilsNew.swift */; };
+		A38AA4F82D1A9E19009968EB /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38AA4F72D1A9E19009968EB /* CustomButtonView.swift */; };
+		A38AA4FA2D1A9F67009968EB /* ButtonOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38AA4F92D1A9F67009968EB /* ButtonOverlayView.swift */; };
+		A38AA4FD2D1A9FA4009968EB /* MyAlertDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38AA4FC2D1A9FA4009968EB /* MyAlertDialog.swift */; };
+		A38AA5002D1AA01F009968EB /* InputFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38AA4FF2D1AA01F009968EB /* InputFieldView.swift */; };
+		A38AA5022D1AA099009968EB /* PasswordInputFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38AA5012D1AA099009968EB /* PasswordInputFieldView.swift */; };
+		A38AA5042D1AA10A009968EB /* SelectFromView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38AA5032D1AA10A009968EB /* SelectFromView.swift */; };
 		A3B5AB422BF498D900C94C64 /* Co_op_BankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB412BF498D900C94C64 /* Co_op_BankApp.swift */; };
 		A3B5AB442BF498D900C94C64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5AB432BF498D900C94C64 /* ContentView.swift */; };
 		A3B5AB462BF498DB00C94C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3B5AB452BF498DB00C94C64 /* Assets.xcassets */; };
@@ -68,6 +76,14 @@
 		A35D6B3D2BF5472F00817DA3 /* Co-op-BankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Co-op-BankTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35D6B3F2BF5472F00817DA3 /* Co_op_BankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Co_op_BankTests.swift; sourceTree = "<group>"; };
 		A35D6B4C2BF548C600817DA3 /* AuthenticationViewmodelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewmodelTests.swift; sourceTree = "<group>"; };
+		A38AA4F32D1A9B5A009968EB /* EncryptDecryptService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptDecryptService.swift; sourceTree = "<group>"; };
+		A38AA4F52D1A9BE8009968EB /* HttpUtilsNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpUtilsNew.swift; sourceTree = "<group>"; };
+		A38AA4F72D1A9E19009968EB /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
+		A38AA4F92D1A9F67009968EB /* ButtonOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonOverlayView.swift; sourceTree = "<group>"; };
+		A38AA4FC2D1A9FA4009968EB /* MyAlertDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlertDialog.swift; sourceTree = "<group>"; };
+		A38AA4FF2D1AA01F009968EB /* InputFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldView.swift; sourceTree = "<group>"; };
+		A38AA5012D1AA099009968EB /* PasswordInputFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordInputFieldView.swift; sourceTree = "<group>"; };
+		A38AA5032D1AA10A009968EB /* SelectFromView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFromView.swift; sourceTree = "<group>"; };
 		A3B5AB3E2BF498D900C94C64 /* Co-op-Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Co-op-Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B5AB412BF498D900C94C64 /* Co_op_BankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Co_op_BankApp.swift; sourceTree = "<group>"; };
 		A3B5AB432BF498D900C94C64 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -170,6 +186,24 @@
 				A35D6B4C2BF548C600817DA3 /* AuthenticationViewmodelTests.swift */,
 			);
 			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		A38AA4FB2D1A9F9D009968EB /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				A38AA4FC2D1A9FA4009968EB /* MyAlertDialog.swift */,
+			);
+			path = Dialogs;
+			sourceTree = "<group>";
+		};
+		A38AA4FE2D1AA006009968EB /* InputFields */ = {
+			isa = PBXGroup;
+			children = (
+				A38AA4FF2D1AA01F009968EB /* InputFieldView.swift */,
+				A38AA5012D1AA099009968EB /* PasswordInputFieldView.swift */,
+				A38AA5032D1AA10A009968EB /* SelectFromView.swift */,
+			);
+			path = InputFields;
 			sourceTree = "<group>";
 		};
 		A3B5AB352BF498D900C94C64 = {
@@ -307,7 +341,11 @@
 		A3B5AB662BF4A67F00C94C64 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A38AA4FE2D1AA006009968EB /* InputFields */,
+				A38AA4FB2D1A9F9D009968EB /* Dialogs */,
 				A3B5AB672BF4A68B00C94C64 /* ToastView.swift */,
+				A38AA4F72D1A9E19009968EB /* CustomButtonView.swift */,
+				A38AA4F92D1A9F67009968EB /* ButtonOverlayView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -326,6 +364,8 @@
 			children = (
 				A3B5AB6E2BF4A73200C94C64 /* Constants.swift */,
 				A3B5AB702BF4A74600C94C64 /* NetworkUtils.swift */,
+				A38AA4F32D1A9B5A009968EB /* EncryptDecryptService.swift */,
+				A38AA4F52D1A9BE8009968EB /* HttpUtilsNew.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -635,12 +675,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3B5AB5E2BF4A5EA00C94C64 /* PrimaryButtonModifier.swift in Sources */,
+				A38AA4F62D1A9BE8009968EB /* HttpUtilsNew.swift in Sources */,
 				A3B5AB6F2BF4A73200C94C64 /* Constants.swift in Sources */,
+				A38AA4F82D1A9E19009968EB /* CustomButtonView.swift in Sources */,
 				A35D6B312BF4DF0E00817DA3 /* SwiftUIView.swift in Sources */,
 				A3B5AB502BF49B4200C94C64 /* LoginView.swift in Sources */,
 				A3B5AB972BF4B0AD00C94C64 /* AuthUsecases.swift in Sources */,
 				A3B5ABBA2BF4BDDD00C94C64 /* Homeusecases.swift in Sources */,
+				A38AA5002D1AA01F009968EB /* InputFieldView.swift in Sources */,
 				A3B5ABAF2BF4BC9400C94C64 /* MessageRepository.swift in Sources */,
+				A38AA5042D1AA10A009968EB /* SelectFromView.swift in Sources */,
+				A38AA4F42D1A9B5A009968EB /* EncryptDecryptService.swift in Sources */,
 				A3B5AB9E2BF4B8D400C94C64 /* CoreDataModel.xcdatamodeld in Sources */,
 				A3B5AB912BF4AEA800C94C64 /* AuthenticateUserRepositoryProtocol.swift in Sources */,
 				A3B5AB6C2BF4A6E300C94C64 /* View.swift in Sources */,
@@ -653,11 +698,14 @@
 				A3B5AB992BF4B19F00C94C64 /* FetchState.swift in Sources */,
 				A3B5AB8E2BF4ACFC00C94C64 /* UserResponseEntity.swift in Sources */,
 				A3B5ABBC2BF4BEA100C94C64 /* HomeViewmodel.swift in Sources */,
+				A38AA4FA2D1A9F67009968EB /* ButtonOverlayView.swift in Sources */,
 				A3B5AB8A2BF4ABB300C94C64 /* UserRequestEntity.swift in Sources */,
+				A38AA5022D1AA099009968EB /* PasswordInputFieldView.swift in Sources */,
 				A3B5ABAB2BF4BB4900C94C64 /* CoreDataProvider.swift in Sources */,
 				A3B5AB422BF498D900C94C64 /* Co_op_BankApp.swift in Sources */,
 				A3B5AB632BF4A63900C94C64 /* Toast.swift in Sources */,
 				A3B5AB872BF4AB6D00C94C64 /* UserRequestModel.swift in Sources */,
+				A38AA4FD2D1A9FA4009968EB /* MyAlertDialog.swift in Sources */,
 				A3B5AB9B2BF4B5FF00C94C64 /* LoginGroupView.swift in Sources */,
 				A3B5AB802BF4A97900C94C64 /* AuthenticationViewmodel.swift in Sources */,
 				A3B5AB682BF4A68B00C94C64 /* ToastView.swift in Sources */,

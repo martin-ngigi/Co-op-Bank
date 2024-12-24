@@ -13,6 +13,7 @@ class Constants{
     static let COOPBaseURL: String = "https://dummyjson.com"
     static let timeoutInterval: Double = 30.0
     static var accessToken: String = ""
+    static var deviceId: String = ""
     static let authURL: String = "/auth/login"
 
     enum APIEndpoint{

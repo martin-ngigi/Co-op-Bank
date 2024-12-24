@@ -11,6 +11,9 @@ import SwiftUI
 struct ColorTheme {
     let darkGreenColor = Color("DarkGreenColor")
     let greenYellow = Color("GreenYellow")
+    let blackAndWhite = Color("BlackAndWhite")
+    let whiteAndBlack = Color("WhiteAndBlack")
+    let primaryColor = Color("DarkGreenColor")
 
 }
 
